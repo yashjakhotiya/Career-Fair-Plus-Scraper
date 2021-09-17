@@ -9,7 +9,7 @@ def main():
         browser.get(url)
         time.sleep(7)
         res = browser.find_elements_by_xpath("//*[contains(text(), 'Ready to meet with a recruiter?')]")
-        print(res)
+        print(sys.argv[2])
         if len(res) != 0:
             while(1):
                 playsound('alarm.wav')
